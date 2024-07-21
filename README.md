@@ -14,6 +14,9 @@ npm create svelte@latest
 npm create svelte@latest my-app
 ```
 
+## Adding Tailwindcss
+Reference: [tailwindcss - sveltekit](https://tailwindcss.com/docs/guides/sveltekit)
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
@@ -36,3 +39,21 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+# Docker
+
+## Building
+
+To build a container of your app:
+
+```bash
+docker build . -t portfolio
+```
+
+## Running
+
+To run your container:
+
+```bash
+docker run -it -p 5173:5173 portfolio
+```
