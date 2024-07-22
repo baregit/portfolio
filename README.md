@@ -50,10 +50,23 @@ To build a container of your app:
 docker build . -t portfolio
 ```
 
+Or with docker compose:
+
+```bash
+docker compose build
+```
+
 ## Running
 
 To run your container:
 
 ```bash
 docker run -it -p 5173:5173 portfolio
+```
+
+Or with docker compose:
+To build a container of your app:
+
+```bash
+docker compose up
 ```
